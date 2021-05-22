@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Design Strony Pizzerii",
+        "image": "images/pizzeria.png",
+        "link": "../pizzeria"
+    },
+    {
+        "name": "Laser Works",
+        "image": "images/laser-2819138_1280.jpg",
+        "post": "articles/laser-works.html"
+    },
+    {
+        "name": "Particles Simulation",
+        "image": "images/particles.png",
+        "post": "articles/particles.html"
+    },
+    {
+        "name": "Mandelbrot Set Visualizer",
+        "image": "images/mandelbrot.png",
+        "post": "articles/mandelbrot-visualizer.html"
+    },
+    {
+        "name": "RNN Text Generator",
+        "image": "images/book-1261800_640.jpg",
+        "post": "articles/rnn-text-generator.html"
+    },
+    {
+        "name": "MIDI Soundboard",
+        "image": "images/lights-2589518_640.jpg",
+        "post": "articles/midi-soundboard.html"
+    },
+    {
+        "name": "LLKE",
+        "image": "images/keyboard-70506_1280.jpg",
+        "post": "articles/llke.html"
+    },
+    {
+        "name": "Mój GitHub",
+        "image": "images/github.png",
+        "link": "https://github.com/skdziwak/"
+    }
+]

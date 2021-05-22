@@ -1,0 +1,319 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100vh;
+    scroll-behavior: scroll;
+}
+body {
+    font-family: Roboto-Light, sans-serif;
+    height: 100vh;
+    color: #FFFFFF;
+    background-color: #000314;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.contents {
+    width: 100vw;
+    height: auto;
+}
+
+.block {
+    padding: 85px 0 0 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+.block h1 {
+    font-family: Roboto-Regular;
+    font-weight: 700;
+    font-size: 4em;
+}
+
+.background {
+    position: fixed;
+    z-index: 0;
+    width: 100vw;
+    height: 98vh;
+    background-image: url('images/desk-593327_1920.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(10%) blur(1px);
+}
+.overlay {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, #00020A 100%);
+}
+.home .center {
+    z-index: 3;
+    position: absolute;
+    top: calc(50vh - 40px);
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    line-height: 150%;
+    font-family: Roboto-Light;
+    font-weight: 100;
+    text-align: center;
+    font-size: 5rem;
+}
+.home .corner {
+    z-index: 3;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 5rem;
+    font-family: Roboto-Light, sans-serif;
+    font-weight: 100;
+}
+
+.button {
+    background-color: #07E374;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+.button:hover {
+    border: 1px solid #07E374;
+    background-color: transparent;
+    color: #07E374;
+}
+.navigation_contents {
+    position: relative;
+    left: 50vw;
+    transform: translateX(-50%);
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.navigation {
+    position: fixed;
+    padding: 10px 0;
+    left: 0;
+    width: 100vw;
+    z-index: 3;
+    background-color: #FFFFFF50;
+    height: 85px;
+}
+.navigation a {
+    margin: 0 12px;
+    font-size: 1.4em;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Roboto-Regular;
+    align-self: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    filter: none;
+}
+.navigation .textbutton:hover {
+    filter: brightness(90%);
+}
+.navigation .textbutton.selected {
+    color: #07E374;
+}
+.navigation .textbutton.selected:hover {
+    filter: brightness(90%);
+}
+.navigation .flex_end {
+    margin-left: auto;
+}
+.navigation img {
+    height: 60px;
+    filter: invert(68%) sepia(72%) saturate(1033%) hue-rotate(92deg) brightness(94%) contrast(95%);
+}
+
+.container {
+    margin: 30px auto;
+}
+
+.about .container {
+    width: 800px;
+}
+.about h1 {
+    width: 100%;
+    left: 50vw;
+    text-align: left;
+    color: #07E374;
+    border-bottom: 1px solid #07E374;
+    margin-bottom: 10px;
+}
+.about p {
+    font-family: Roboto-Regular;
+    font-size: 1.3em;
+    line-height: 145%;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+.projects {
+    overflow-y: auto;
+}
+.projects .container {
+    width: 80vw;
+}
+.projects h1 {
+    width: 100%;
+    left: 50vw;
+    text-align: center;
+    color: #07E374;
+    margin-bottom: 30px;
+}
+.projects .flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projects .box {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: calc(25% - 30px);
+    background-color: #FFFFFF50;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    border-radius: 5px;
+    overflow: hidden;
+    filter: saturate(20%);
+    transition: all 0.5s ease;
+}
+.projects .box:hover {
+    filter: none;
+}
+.projects .box:active {
+    filter: saturate(20%);
+}
+.projects .box:nth-child(4n) {
+    margin-right: 0;
+}
+.projects .boximg {
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    object-fit: cover;
+}
+.projects .boxbar {
+    width: 100%;
+    color: #000314;
+    padding: 0 5px;
+    text-align: center;
+    font-family: Roboto-Light;
+    font-weight: 500;
+    font-size: 1.3em;
+    flex-grow: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.services .container {
+    width: 80vw;
+}
+.services h1 {
+    width: 100%;
+    left: 50vw;
+    text-align: center;
+    color: #07E374;
+    margin-bottom: 10px;
+}
+.services .flexbox {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.services .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-basis: 20%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0 5px;
+}
+.services .box:last-of-type {
+    margin-right: 0;
+}
+.services img {
+    width: 140px;
+    margin-bottom: 20px;
+    filter: invert(99%) sepia(1%) saturate(329%) hue-rotate(224deg) brightness(113%) contrast(100%);
+    /*
+    filter: invert(74%) sepia(22%) saturate(6605%) hue-rotate(98deg) brightness(100%) contrast(94%);
+    */
+}
+.services a {
+    font-family: Roboto-Regular;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.post {
+    overflow-y: auto;
+}
+
+.post .container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+.post h1 {    
+    text-align: left;
+    color: #07E374;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #07E374;
+    width: 100%;
+}
+.post p {    
+    font-family: Roboto-Regular;
+    font-size: 1.3em;
+    line-height: 145%;
+    margin-bottom: 20px;
+}
+.post img {
+    flex-grow: 0;
+    flex-shrink: 3;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.post a {
+    text-decoration: none;
+    color: #07E374;
+}
+.post a:hover {
+    filter: brightness(130%);
+}
+
+.attribution {
+    visibility: hidden;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-family: Roboto-Regular;
+    font-size: 0.8em;
+}
+.attribution a:link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.attribution a:visited {
+    color: #FFFFFF;
+}
