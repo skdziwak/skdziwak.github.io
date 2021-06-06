@@ -10,14 +10,14 @@
         "post": "articles/laser-works.html"
     },
     {
-        "name": "QuickSettings",
-        "image": "images/quicksettings2.png",
-        "post": "articles/quicksettings.html"
-    },
-    {
         "name": "Particles Simulation",
         "image": "images/particles.png",
         "post": "articles/particles.html"
+    },
+    {
+        "name": "QuickSettings",
+        "image": "images/quicksettings2.png",
+        "post": "articles/quicksettings.html"
     },
     {
         "name": "RNN Text Generator",
